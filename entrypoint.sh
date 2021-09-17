@@ -9,15 +9,15 @@ INPUT_DIRECTORY=${INPUT_DIRECTORY:-'.'}
 _FORCE_OPTION=''
 REPOSITORY=${INPUT_REPOSITORY:-$GITHUB_REPOSITORY}
 
-git config --global user.email "me@ahmadawais.com"
-git config --global user.name "Ahmad Awais"
+git config --global user.email "theo.david@evarisk.com"
+git config --global user.name "evarisk-theo"
 
 echo "❯ Generate changelog:";
 npx auto-changelog --package --unreleased --output 'changelog.md' --commit-limit 'false'
 
 echo "❯ Git commit:";
 git add .
-git commit -m " 📖 DOC: Changelog"
+git commit -m " 📖 Changelog"
 
 echo "❯ Configure:";
 [ -z "${INPUT_GITHUB_TOKEN}" ] && {
