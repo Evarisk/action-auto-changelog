@@ -11,6 +11,7 @@ REPOSITORY=${INPUT_REPOSITORY:-$GITHUB_REPOSITORY}
 
 git config --global user.email "theo.david@evarisk.com"
 git config --global user.name "evarisk-theo"
+git config --global --add safe.directory /github/workspace
 
 echo "❯ Generate changelog:";
 npx auto-changelog --package --unreleased --output 'changelog.md' --commit-limit 'false'
