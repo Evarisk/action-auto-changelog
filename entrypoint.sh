@@ -9,8 +9,8 @@ INPUT_DIRECTORY=${INPUT_DIRECTORY:-'.'}
 _FORCE_OPTION=''
 REPOSITORY=${INPUT_REPOSITORY:-$GITHUB_REPOSITORY}
 
-git config --global user.email "theo.david@evarisk.com"
-git config --global user.name "evarisk-theo"
+git config --global user.email "nicolas@eoxia.com"
+git config --global user.name "Nicolas Domenech"
 git config --global --add safe.directory /github/workspace
 
 echo "❯ Generate changelog:";
